@@ -6,7 +6,7 @@ export default function App() {
       <header>
         <h1>TEMP</h1>
         <nav>
-          <Link to="/">Home</Link> | <Link to="/users">Users</Link>
+          <Link to="/">Home</Link> | <Link to="/users">Users</Link> | <Link to="/produtos">Produtos</Link>
         </nav>
       </header>
 

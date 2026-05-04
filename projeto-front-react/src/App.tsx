@@ -1,20 +1,14 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Rodape from "./components/Rodape/Rodape";
 
 export default function App() {
   return (
     <div>
-      <header>
-        <h1>TEMP</h1>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/users">Users</Link>
-        </nav>
-      </header>
 
-        <Outlet/>
-
-      <footer>
-        TEMP
-      </footer>
+        <Cabecalho/>
+        <Outlet />
+        <Rodape/>
     </div>
   )
 }

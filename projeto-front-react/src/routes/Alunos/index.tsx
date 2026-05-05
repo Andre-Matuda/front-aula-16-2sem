@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TipoAluno } from "../../types/tipoAluno";
+import { Link } from "react-router-dom";
 
 export default function Alunos() {
 
@@ -49,7 +50,7 @@ export default function Alunos() {
                 <td>{a.rm}</td>
                 <td>{a.aluno}</td>
                 <td>{a.nota}</td>
-                <td>Editar / Excluir</td>
+                <td> <Link to={`/editar/aluno/${a.id}`}>Editar</Link> / <Link to={`/editar/aluno/${a.id}`}>Excluir</Link></td>
               </tr>
             ))}
           </tbody>
